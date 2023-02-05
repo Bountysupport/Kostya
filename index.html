@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container container_header">
+                <nav class="nav">
+                    <div class="logo">
+                        <img src="assets/img/svg/logo.svg" alt="">
+                    </div>
+                    <div class="nav_list-w">
+                        <div class="nav_list_link">
+                            <ul>
+                                <li><a href="">How it works</a></li>
+                                <li><a href="">Solutions</a></li>
+                                <li><a href="">Security</a></li>
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Resources</a></li>
+                                <li><a href="">Login</a></li>
+                                <li><a href="">Join for free</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="burger_menu">
+                        <span></span>
+                    </div>
+                    <div class="nav_icon_img">
+                        <img src="assets/img/svg/Vector.svg" alt="">
+                    </div>
+                </nav>
+                <div class="gradient-w">
+                    <h1>Who shares wins</h1>
+                    <div class="gradient"></div>
+                    <div class="info_title-w">
+                        <div class="info_title">
+                            <h2>Collaborative Growth</h2>
+                            <img src="assets/img/svg/+.svg" alt="">
+                            <h2>Collaborative Growth</h2>
+                            <img src="assets/img/svg/=.svg" alt="">
+                            <h2>Collaborative Growth</h2>
+                           <div class="info_title-p">
+                            <p>Joining forces makes us stronger, in business just as much as in everything else. That's why we help B2B companies accelerate their growth by coming together. By comparing CRM data from both sides, Reveal identifies common, high-potential accounts and new qualified leads. Creating more value together is the new norm, and we call it Collaborative Growth. And we think it should be free forever. So that’s what it costs.</p>
+                           </div>
+                        </div>
+                    </div>
+              
+                </div>
+            </div>
+        </header> 
+        <main class="main">
+            <div class="container container_main">
+                <main class="main">
+                    <div class="container container_main">
+                        <div id="video" class="vedeo-w">
+                            <iframe width="70%" height="491px" src="https://www.youtube.com/embed/pVw5S4xMbrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.burger_menu').click(function (event) {
+                $('.nav_list-w,.burger_menu').toggleClass('active');
+            });
+        });
+        $('.burger_menu').on('change', function() {
+  $('body').css('overflow', $(this).prop('checked') === true ? 'hidden' : '');
+});
+    </script>
+</body>
+
+</html>
